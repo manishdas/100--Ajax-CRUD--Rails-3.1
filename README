@@ -1,0 +1,3 @@
+This is a 100% Ajax CRUD.  It was adapted from his tutorial: 
+http://stjhimy.com/posts/07-creating-a-100-ajax-crud-using-rails-3-and-unobtrusive-javascript
+but updated to work with Rails 3.1.

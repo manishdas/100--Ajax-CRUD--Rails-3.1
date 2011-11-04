@@ -1,0 +1,30 @@
+<table>
+	<tr>
+		<th>
+			Title
+		</th>
+		<th>
+			Content
+		</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<% @posts.each do |post| %>
+		<tr>
+			<td>
+				<%= post.title %>
+			</td>
+			<td>
+				<%= post.content %>
+			</td>
+			<td>
+				<%= link_to 'Edit', edit_post_path(post), remote: true %>
+			</td>
+			<td>
+				<%= link_to 'Destroy', post, confirm: 'Are you sure?', 
+					method: :delete, remote: true %>
+			</td>
+		</tr>
+	<% end %>
+</table>
